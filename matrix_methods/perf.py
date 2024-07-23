@@ -1,8 +1,9 @@
-from time import time 
+from time import time, sleep
 from .build.matr_mult import multiply_matrices_wrapper, sum_matrices_wrapper, determinant
 import random
 from math import isnan
 from copy import deepcopy
+from threading import Thread
 def c_det(matrix):
     if len(matrix) != len(matrix[0]):
         raise ValueError("The matrix must be square")
@@ -44,6 +45,7 @@ def performance(f, type = "C"):
         end = time()
         handler.resultString = (f'Elapsed time: {(end - start):.3f} | type: {type}')
         handler.resultFloat = end-start
+        handler.result = res
         return res
     handler.resultString = None
     return handler
@@ -89,27 +91,33 @@ if __name__ == "__main__":
     matrix_b = [[random.random() for _ in range(cols_b)] for _ in range(rows_b)]
 
 
-    c_func = performance(c_mult, type="Cython")
-    p_func = performance(matmult, type="Python")
-    res1 = c_func(matrix_a, matrix_b)
-    print(c_func.resultString)
-    res2 = p_func(matrix_a, matrix_b)
-    print(p_func.resultString)
-    num_iterations = 100
-    average_c = get_average(c_func, iterations = num_iterations)
-    print(f"Average cython time: {average_c} in num_iterations = {num_iterations} |\n matrix sizes {rows_a}x{cols_a} and {rows_b}x{cols_b}")
-    average_p = get_average(p_func, iterations = num_iterations)
-    print(f"Average python time: {average_p} in num_iterations = {num_iterations} |\n matrix sizes {rows_a}x{cols_a} and {rows_b}x{cols_b}")
+    # c_func = performance(c_mult, type="Cython")
+    # p_func = performance(matmult, type="Python")
+    # res1 = c_func(matrix_a, matrix_b)
+    # print(c_func.resultString)
+    # res2 = p_func(matrix_a, matrix_b)
+    # print(p_func.resultString)
+    # num_iterations = 100
+    # average_c = get_average(c_func, iterations = num_iterations)
+    # print(f"Average cython time: {average_c} in num_iterations = {num_iterations} |\n matrix sizes {rows_a}x{cols_a} and {rows_b}x{cols_b}")
+    # average_p = get_average(p_func, iterations = num_iterations)
+    # print(f"Average python time: {average_p} in num_iterations = {num_iterations} |\n matrix sizes {rows_a}x{cols_a} and {rows_b}x{cols_b}")
     
-    matrix = [[random.randint(1,5) if i == j else 0 for i in range(2500)] for j in range(2500)]
+    matrix = [[random.randint(1,5) if i == j else 0 for i in range(2000)] for j in range(2000)]
     cp_det = performance(c_det)
     p_det = performance(deter, type = 'P')
-    res = cp_det(matrix)
-    print(cp_det.resultString)
-    print(res)
-    res1 = p_det(matrix)
-
-    print(p_det.resultString)
-    print(res1)
-    
-
+    t1 = Thread(target=cp_det, args=(matrix,))
+    t2 = Thread(target=p_det, args=(matrix,))
+    t2.start()
+    t1.start()
+    # for i in range(10):
+    #     print(i)
+    #     sleep(0.3)
+    t2.join() # Блокируем поток до получения результата ( блокируем только второй поток, т.к. сишний поток работает в сотни раз быстрее и он уже давно закончил свою работу)
+    time1 = time()
+    t1.join()
+    time2 = time()
+    print(time2-time1)
+    print("Cython thread result: ", cp_det.resultString)
+    print("Cython thread result: ", p_det.resultString)
+    print(cp_det.result, p_det.result)

@@ -1,3 +1,5 @@
-Matrix A Size,Matrix B Size,Iterations,Cython (sec),Python (sec)
-521x241,241x652,100,0.1339475417137146,9.9339475417137146
-2500x250,250x2500,1,2.135,165.009
+Matrix A Size,Matrix B Size,Operation,      Iterations,     Cython (sec),       Python (sec)
+521x241,241x652,Multiply,100,0.1339475417137146,9.9339475417137146
+2500x250,250x2500,Multiply,1,2.135,165.009
+1000x1000,None,Determinant,1,0.315,33.747
+2000x2000,None,Determinant,1,2.603,271.484
