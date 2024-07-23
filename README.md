@@ -4,8 +4,8 @@ Example of Cython using
 # Comparison of the speed of code for matrix multiplication in standard Python and with Cython
 
 ## C Code
-- [.c file](matrix_mult/lowlevel/matr_m.c)
-- [.pyx file](matrix_mult/matr_mult.pyx)
+- [.c file](matrix_methods/lowlevel/matr_m.c)
+- [.pyx file](matrix_methods/matr_mult.pyx)
 
 ## Python Code
 - [.py file line 5:11](matrix_mult/perf.py)
