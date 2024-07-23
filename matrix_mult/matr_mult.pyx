@@ -1,6 +1,6 @@
 from libc.stdlib cimport malloc, free
 
-cdef extern from "lowlevel\matr_m.c":
+cdef extern from "lowlevel\matr_m.c" nogil:
     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
 
 def multiply_matrices_wrapper(matrix_a, matrix_b):
@@ -20,7 +20,7 @@ def multiply_matrices_wrapper(matrix_a, matrix_b):
         >>> matrix_b = [[5, 6], [7, 8]]
         >>> multiply_matrices_wrapper(matrix_a, matrix_b)
         [[19, 22], [43, 50]]
-        
+
     """
     
     cdef int rows_a = len(matrix_a)

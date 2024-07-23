@@ -2128,7 +2128,7 @@ static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_matrix_mult_matr_mult_pyx[] = "matrix_mult\\matr_mult.pyx";
 static const char __pyx_k_multiply_matrices_wrapper[] = "multiply_matrices_wrapper";
-static const char __pyx_k_This_module_provides_a_wrapper[] = "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n        \n    ";
+static const char __pyx_k_This_module_provides_a_wrapper[] = "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n\n    ";
 static const char __pyx_k_multiply_matrices_wrapper_line_6[] = "multiply_matrices_wrapper (line 6)";
 /* #### Code section: decls ### */
 static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_matrix_a, PyObject *__pyx_v_matrix_b); /* proto */
@@ -2403,7 +2403,7 @@ PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_9matr_mult_multiply_matrices_wrapper, "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n        \n    ");
+PyDoc_STRVAR(__pyx_doc_9matr_mult_multiply_matrices_wrapper, "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n\n    ");
 static PyMethodDef __pyx_mdef_9matr_mult_1multiply_matrices_wrapper = {"multiply_matrices_wrapper", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_9matr_mult_1multiply_matrices_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_9matr_mult_multiply_matrices_wrapper};
 static PyObject *__pyx_pw_9matr_mult_1multiply_matrices_wrapper(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
@@ -3566,7 +3566,7 @@ if (!__Pyx_RefNanny) {
   /* "matr_mult.pyx":1
  * from libc.stdlib cimport malloc, free             # <<<<<<<<<<<<<<
  * 
- * cdef extern from "lowlevel\matr_m.c":
+ * cdef extern from "lowlevel\matr_m.c" nogil:
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
