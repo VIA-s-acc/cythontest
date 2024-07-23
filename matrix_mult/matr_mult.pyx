@@ -4,6 +4,25 @@ cdef extern from "lowlevel\matr_m.c":
     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
 
 def multiply_matrices_wrapper(matrix_a, matrix_b):
+        
+    """
+    This module provides a wrapper function for multiplying two matrices using a C implementation.
+
+    Parameters:
+        matrix_a (List[List[float]]): The first matrix to multiply.
+        matrix_b (List[List[float]]): The second matrix to multiply.
+
+    Returns:
+        List[List[float]]: The result of the matrix multiplication.
+
+    Example:
+        >>> matrix_a = [[1, 2], [3, 4]]
+        >>> matrix_b = [[5, 6], [7, 8]]
+        >>> multiply_matrices_wrapper(matrix_a, matrix_b)
+        [[19, 22], [43, 50]]
+        
+    """
+    
     cdef int rows_a = len(matrix_a)
     cdef int cols_a = len(matrix_a[0])
     cdef int rows_b = len(matrix_b)

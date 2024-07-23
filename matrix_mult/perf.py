@@ -27,15 +27,14 @@ def performance(f, type = "C"):
 
 
 if __name__ == "__main__":
-    rows_a, cols_a = 2500, 200
-    rows_b, cols_b = 200, 2500
+    rows_a, cols_a = 250, 200
+    rows_b, cols_b = 200, 250
     matrix_a = [[random.random() for _ in range(cols_a)] for _ in range(rows_a)]
     matrix_b = [[random.random() for _ in range(cols_b)] for _ in range(rows_b)]
 
     
     c_func = performance(c_mult, type="Cython")
     p_func = performance(matmult, type="Python")
-
     c_func(matrix_a, matrix_b)
     print(c_func.resultString)
     p_func(matrix_a, matrix_b)
