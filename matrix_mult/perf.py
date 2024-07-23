@@ -1,6 +1,7 @@
 from time import time 
-from build.matr_mult import multiply_matrices_wrapper
+from .build.matr_mult import multiply_matrices_wrapper, sum_matrices_wrapper
 import random
+
 
 def matmult(a, b):
     if len(a[0]) != len(b):
@@ -11,6 +12,14 @@ def matmult(a, b):
             for k in range(len(b)):
                 result[i][j] += a[i][k] * b[k][j]
                 
+    return result
+
+def c_sum(matrix_a, matrix_b):
+    if len(matrix_a[0]) != len(matrix_b[0]) and len(matrix_a) != len(matrix_b):
+        raise(ValueError("The shape of the matrices must be the same"))
+    
+    result = sum_matrices_wrapper(matrix_a, matrix_b)
+    
     return result
 
 
@@ -62,5 +71,5 @@ if __name__ == "__main__":
     print(f"Average python time: {average_p} in num_iterations = {num_iterations} |\n matrix sizes {rows_a}x{cols_a} and {rows_b}x{cols_b}")
     
 
-
+    print(dir(mm))
 
