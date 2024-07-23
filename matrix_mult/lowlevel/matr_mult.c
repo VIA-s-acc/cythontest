@@ -2103,7 +2103,7 @@ static PyObject *__pyx_builtin_range;
 /* #### Code section: string_decls ### */
 static const char __pyx_k_i[] = "i";
 static const char __pyx_k_j[] = "j";
-static const char __pyx_k__3[] = "?";
+static const char __pyx_k__5[] = "?";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_test[] = "__test__";
@@ -2126,12 +2126,16 @@ static const char __pyx_k_class_getitem[] = "__class_getitem__";
 static const char __pyx_k_result_matrix[] = "result_matrix";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
+static const char __pyx_k_sum_matrices_wrapper[] = "sum_matrices_wrapper";
 static const char __pyx_k_matrix_mult_matr_mult_pyx[] = "matrix_mult\\matr_mult.pyx";
 static const char __pyx_k_multiply_matrices_wrapper[] = "multiply_matrices_wrapper";
-static const char __pyx_k_This_module_provides_a_wrapper[] = "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n\n    ";
-static const char __pyx_k_multiply_matrices_wrapper_line_6[] = "multiply_matrices_wrapper (line 6)";
+static const char __pyx_k_sum_matrices_wrapper_line_8[] = "sum_matrices_wrapper (line 8)";
+static const char __pyx_k_This_module_provides_a_wrapper[] = "\n    This module provides a wrapper function for summing two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to sum.\n        matrix_b (List[List[float]]): The second matrix to sum.\n\n    Returns:\n        List[List[float]]: The sum of the two matrices.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> sum_matrices_wrapper(matrix_a, matrix_b)\n        [[6, 8], [10, 12]]\n\n    ";
+static const char __pyx_k_This_module_provides_a_wrapper_2[] = "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n\n    ";
+static const char __pyx_k_multiply_matrices_wrapper_line_5[] = "multiply_matrices_wrapper (line 56)";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_matrix_a, PyObject *__pyx_v_matrix_b); /* proto */
+static PyObject *__pyx_pf_9matr_mult_sum_matrices_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_matrix_a, PyObject *__pyx_v_matrix_b); /* proto */
+static PyObject *__pyx_pf_9matr_mult_2multiply_matrices_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_matrix_a, PyObject *__pyx_v_matrix_b); /* proto */
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
 typedef struct {
@@ -2166,7 +2170,8 @@ typedef struct {
   #if CYTHON_USE_MODULE_STATE
   #endif
   PyObject *__pyx_kp_u_This_module_provides_a_wrapper;
-  PyObject *__pyx_n_s__3;
+  PyObject *__pyx_kp_u_This_module_provides_a_wrapper_2;
+  PyObject *__pyx_n_s__5;
   PyObject *__pyx_n_s_asyncio_coroutines;
   PyObject *__pyx_n_s_c_matrix_a;
   PyObject *__pyx_n_s_c_matrix_b;
@@ -2183,7 +2188,7 @@ typedef struct {
   PyObject *__pyx_n_s_matrix_b;
   PyObject *__pyx_kp_s_matrix_mult_matr_mult_pyx;
   PyObject *__pyx_n_s_multiply_matrices_wrapper;
-  PyObject *__pyx_kp_u_multiply_matrices_wrapper_line_6;
+  PyObject *__pyx_kp_u_multiply_matrices_wrapper_line_5;
   PyObject *__pyx_n_s_name;
   PyObject *__pyx_n_s_range;
   PyObject *__pyx_n_s_result;
@@ -2193,9 +2198,13 @@ typedef struct {
   PyObject *__pyx_n_s_size_a;
   PyObject *__pyx_n_s_size_b;
   PyObject *__pyx_n_s_size_result;
+  PyObject *__pyx_n_s_sum_matrices_wrapper;
+  PyObject *__pyx_kp_u_sum_matrices_wrapper_line_8;
   PyObject *__pyx_n_s_test;
   PyObject *__pyx_tuple_;
+  PyObject *__pyx_tuple__3;
   PyObject *__pyx_codeobj__2;
+  PyObject *__pyx_codeobj__4;
 } __pyx_mstate;
 
 #if CYTHON_USE_MODULE_STATE
@@ -2239,7 +2248,8 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_FusedFunctionType);
   #endif
   Py_CLEAR(clear_module_state->__pyx_kp_u_This_module_provides_a_wrapper);
-  Py_CLEAR(clear_module_state->__pyx_n_s__3);
+  Py_CLEAR(clear_module_state->__pyx_kp_u_This_module_provides_a_wrapper_2);
+  Py_CLEAR(clear_module_state->__pyx_n_s__5);
   Py_CLEAR(clear_module_state->__pyx_n_s_asyncio_coroutines);
   Py_CLEAR(clear_module_state->__pyx_n_s_c_matrix_a);
   Py_CLEAR(clear_module_state->__pyx_n_s_c_matrix_b);
@@ -2256,7 +2266,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_matrix_b);
   Py_CLEAR(clear_module_state->__pyx_kp_s_matrix_mult_matr_mult_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_multiply_matrices_wrapper);
-  Py_CLEAR(clear_module_state->__pyx_kp_u_multiply_matrices_wrapper_line_6);
+  Py_CLEAR(clear_module_state->__pyx_kp_u_multiply_matrices_wrapper_line_5);
   Py_CLEAR(clear_module_state->__pyx_n_s_name);
   Py_CLEAR(clear_module_state->__pyx_n_s_range);
   Py_CLEAR(clear_module_state->__pyx_n_s_result);
@@ -2266,9 +2276,13 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_size_a);
   Py_CLEAR(clear_module_state->__pyx_n_s_size_b);
   Py_CLEAR(clear_module_state->__pyx_n_s_size_result);
+  Py_CLEAR(clear_module_state->__pyx_n_s_sum_matrices_wrapper);
+  Py_CLEAR(clear_module_state->__pyx_kp_u_sum_matrices_wrapper_line_8);
   Py_CLEAR(clear_module_state->__pyx_n_s_test);
   Py_CLEAR(clear_module_state->__pyx_tuple_);
+  Py_CLEAR(clear_module_state->__pyx_tuple__3);
   Py_CLEAR(clear_module_state->__pyx_codeobj__2);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__4);
   return 0;
 }
 #endif
@@ -2290,7 +2304,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_FusedFunctionType);
   #endif
   Py_VISIT(traverse_module_state->__pyx_kp_u_This_module_provides_a_wrapper);
-  Py_VISIT(traverse_module_state->__pyx_n_s__3);
+  Py_VISIT(traverse_module_state->__pyx_kp_u_This_module_provides_a_wrapper_2);
+  Py_VISIT(traverse_module_state->__pyx_n_s__5);
   Py_VISIT(traverse_module_state->__pyx_n_s_asyncio_coroutines);
   Py_VISIT(traverse_module_state->__pyx_n_s_c_matrix_a);
   Py_VISIT(traverse_module_state->__pyx_n_s_c_matrix_b);
@@ -2307,7 +2322,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_matrix_b);
   Py_VISIT(traverse_module_state->__pyx_kp_s_matrix_mult_matr_mult_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_multiply_matrices_wrapper);
-  Py_VISIT(traverse_module_state->__pyx_kp_u_multiply_matrices_wrapper_line_6);
+  Py_VISIT(traverse_module_state->__pyx_kp_u_multiply_matrices_wrapper_line_5);
   Py_VISIT(traverse_module_state->__pyx_n_s_name);
   Py_VISIT(traverse_module_state->__pyx_n_s_range);
   Py_VISIT(traverse_module_state->__pyx_n_s_result);
@@ -2317,9 +2332,13 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_size_a);
   Py_VISIT(traverse_module_state->__pyx_n_s_size_b);
   Py_VISIT(traverse_module_state->__pyx_n_s_size_result);
+  Py_VISIT(traverse_module_state->__pyx_n_s_sum_matrices_wrapper);
+  Py_VISIT(traverse_module_state->__pyx_kp_u_sum_matrices_wrapper_line_8);
   Py_VISIT(traverse_module_state->__pyx_n_s_test);
   Py_VISIT(traverse_module_state->__pyx_tuple_);
+  Py_VISIT(traverse_module_state->__pyx_tuple__3);
   Py_VISIT(traverse_module_state->__pyx_codeobj__2);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__4);
   return 0;
 }
 #endif
@@ -2355,7 +2374,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #if CYTHON_USE_MODULE_STATE
 #endif
 #define __pyx_kp_u_This_module_provides_a_wrapper __pyx_mstate_global->__pyx_kp_u_This_module_provides_a_wrapper
-#define __pyx_n_s__3 __pyx_mstate_global->__pyx_n_s__3
+#define __pyx_kp_u_This_module_provides_a_wrapper_2 __pyx_mstate_global->__pyx_kp_u_This_module_provides_a_wrapper_2
+#define __pyx_n_s__5 __pyx_mstate_global->__pyx_n_s__5
 #define __pyx_n_s_asyncio_coroutines __pyx_mstate_global->__pyx_n_s_asyncio_coroutines
 #define __pyx_n_s_c_matrix_a __pyx_mstate_global->__pyx_n_s_c_matrix_a
 #define __pyx_n_s_c_matrix_b __pyx_mstate_global->__pyx_n_s_c_matrix_b
@@ -2372,7 +2392,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_matrix_b __pyx_mstate_global->__pyx_n_s_matrix_b
 #define __pyx_kp_s_matrix_mult_matr_mult_pyx __pyx_mstate_global->__pyx_kp_s_matrix_mult_matr_mult_pyx
 #define __pyx_n_s_multiply_matrices_wrapper __pyx_mstate_global->__pyx_n_s_multiply_matrices_wrapper
-#define __pyx_kp_u_multiply_matrices_wrapper_line_6 __pyx_mstate_global->__pyx_kp_u_multiply_matrices_wrapper_line_6
+#define __pyx_kp_u_multiply_matrices_wrapper_line_5 __pyx_mstate_global->__pyx_kp_u_multiply_matrices_wrapper_line_5
 #define __pyx_n_s_name __pyx_mstate_global->__pyx_n_s_name
 #define __pyx_n_s_range __pyx_mstate_global->__pyx_n_s_range
 #define __pyx_n_s_result __pyx_mstate_global->__pyx_n_s_result
@@ -2382,13 +2402,546 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_size_a __pyx_mstate_global->__pyx_n_s_size_a
 #define __pyx_n_s_size_b __pyx_mstate_global->__pyx_n_s_size_b
 #define __pyx_n_s_size_result __pyx_mstate_global->__pyx_n_s_size_result
+#define __pyx_n_s_sum_matrices_wrapper __pyx_mstate_global->__pyx_n_s_sum_matrices_wrapper
+#define __pyx_kp_u_sum_matrices_wrapper_line_8 __pyx_mstate_global->__pyx_kp_u_sum_matrices_wrapper_line_8
 #define __pyx_n_s_test __pyx_mstate_global->__pyx_n_s_test
 #define __pyx_tuple_ __pyx_mstate_global->__pyx_tuple_
+#define __pyx_tuple__3 __pyx_mstate_global->__pyx_tuple__3
 #define __pyx_codeobj__2 __pyx_mstate_global->__pyx_codeobj__2
+#define __pyx_codeobj__4 __pyx_mstate_global->__pyx_codeobj__4
 /* #### Code section: module_code ### */
 
-/* "matr_mult.pyx":6
- *     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
+/* "matr_mult.pyx":8
+ * 
+ * 
+ * def sum_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
+ * 
+ *     """
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_9matr_mult_1sum_matrices_wrapper(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+); /*proto*/
+PyDoc_STRVAR(__pyx_doc_9matr_mult_sum_matrices_wrapper, "\n    This module provides a wrapper function for summing two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to sum.\n        matrix_b (List[List[float]]): The second matrix to sum.\n\n    Returns:\n        List[List[float]]: The sum of the two matrices.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> sum_matrices_wrapper(matrix_a, matrix_b)\n        [[6, 8], [10, 12]]\n\n    ");
+static PyMethodDef __pyx_mdef_9matr_mult_1sum_matrices_wrapper = {"sum_matrices_wrapper", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_9matr_mult_1sum_matrices_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_9matr_mult_sum_matrices_wrapper};
+static PyObject *__pyx_pw_9matr_mult_1sum_matrices_wrapper(PyObject *__pyx_self, 
+#if CYTHON_METH_FASTCALL
+PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
+#else
+PyObject *__pyx_args, PyObject *__pyx_kwds
+#endif
+) {
+  PyObject *__pyx_v_matrix_a = 0;
+  PyObject *__pyx_v_matrix_b = 0;
+  #if !CYTHON_METH_FASTCALL
+  CYTHON_UNUSED Py_ssize_t __pyx_nargs;
+  #endif
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject* values[2] = {0,0};
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("sum_matrices_wrapper (wrapper)", 0);
+  #if !CYTHON_METH_FASTCALL
+  #if CYTHON_ASSUME_SAFE_MACROS
+  __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
+  #else
+  __pyx_nargs = PyTuple_Size(__pyx_args); if (unlikely(__pyx_nargs < 0)) return NULL;
+  #endif
+  #endif
+  __pyx_kwvalues = __Pyx_KwValues_FASTCALL(__pyx_args, __pyx_nargs);
+  {
+    PyObject **__pyx_pyargnames[] = {&__pyx_n_s_matrix_a,&__pyx_n_s_matrix_b,0};
+    if (__pyx_kwds) {
+      Py_ssize_t kw_args;
+      switch (__pyx_nargs) {
+        case  2: values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+        CYTHON_FALLTHROUGH;
+        case  1: values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+        CYTHON_FALLTHROUGH;
+        case  0: break;
+        default: goto __pyx_L5_argtuple_error;
+      }
+      kw_args = __Pyx_NumKwargs_FASTCALL(__pyx_kwds);
+      switch (__pyx_nargs) {
+        case  0:
+        if (likely((values[0] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_matrix_a)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 8, __pyx_L3_error)
+        else goto __pyx_L5_argtuple_error;
+        CYTHON_FALLTHROUGH;
+        case  1:
+        if (likely((values[1] = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_matrix_b)) != 0)) {
+          (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
+          kw_args--;
+        }
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 8, __pyx_L3_error)
+        else {
+          __Pyx_RaiseArgtupleInvalid("sum_matrices_wrapper", 1, 2, 2, 1); __PYX_ERR(0, 8, __pyx_L3_error)
+        }
+      }
+      if (unlikely(kw_args > 0)) {
+        const Py_ssize_t kwd_pos_args = __pyx_nargs;
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "sum_matrices_wrapper") < 0)) __PYX_ERR(0, 8, __pyx_L3_error)
+      }
+    } else if (unlikely(__pyx_nargs != 2)) {
+      goto __pyx_L5_argtuple_error;
+    } else {
+      values[0] = __Pyx_Arg_FASTCALL(__pyx_args, 0);
+      values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
+    }
+    __pyx_v_matrix_a = values[0];
+    __pyx_v_matrix_b = values[1];
+  }
+  goto __pyx_L6_skip;
+  __pyx_L5_argtuple_error:;
+  __Pyx_RaiseArgtupleInvalid("sum_matrices_wrapper", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 8, __pyx_L3_error)
+  __pyx_L6_skip:;
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_AddTraceback("matr_mult.sum_matrices_wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  __pyx_r = __pyx_pf_9matr_mult_sum_matrices_wrapper(__pyx_self, __pyx_v_matrix_a, __pyx_v_matrix_b);
+
+  /* function exit code */
+  {
+    Py_ssize_t __pyx_temp;
+    for (__pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
+      __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
+    }
+  }
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_9matr_mult_sum_matrices_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_matrix_a, PyObject *__pyx_v_matrix_b) {
+  int __pyx_v_rows_a;
+  int __pyx_v_cols_a;
+  int __pyx_v_size_a;
+  double *__pyx_v_c_matrix_a;
+  double *__pyx_v_c_matrix_b;
+  double *__pyx_v_result_matrix;
+  PyObject *__pyx_v_i = NULL;
+  PyObject *__pyx_v_j = NULL;
+  PyObject *__pyx_v_result = NULL;
+  int __pyx_7genexpr__pyx_v_i;
+  int __pyx_8genexpr1__pyx_v_j;
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  Py_ssize_t __pyx_t_1;
+  PyObject *__pyx_t_2 = NULL;
+  PyObject *__pyx_t_3 = NULL;
+  PyObject *(*__pyx_t_4)(PyObject *);
+  PyObject *__pyx_t_5 = NULL;
+  Py_ssize_t __pyx_t_6;
+  PyObject *(*__pyx_t_7)(PyObject *);
+  PyObject *__pyx_t_8 = NULL;
+  double __pyx_t_9;
+  Py_ssize_t __pyx_t_10;
+  int __pyx_t_11;
+  int __pyx_t_12;
+  int __pyx_t_13;
+  int __pyx_t_14;
+  int __pyx_t_15;
+  int __pyx_t_16;
+  int __pyx_lineno = 0;
+  const char *__pyx_filename = NULL;
+  int __pyx_clineno = 0;
+  __Pyx_RefNannySetupContext("sum_matrices_wrapper", 1);
+
+  /* "matr_mult.pyx":29
+ * 
+ * 
+ *     cdef int rows_a = len(matrix_a)             # <<<<<<<<<<<<<<
+ *     cdef int cols_a = len(matrix_a[0])
+ * 
+ */
+  __pyx_t_1 = PyObject_Length(__pyx_v_matrix_a); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_v_rows_a = __pyx_t_1;
+
+  /* "matr_mult.pyx":30
+ * 
+ *     cdef int rows_a = len(matrix_a)
+ *     cdef int cols_a = len(matrix_a[0])             # <<<<<<<<<<<<<<
+ * 
+ *     cdef int size_a = rows_a * cols_a
+ */
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_matrix_a, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 30, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_v_cols_a = __pyx_t_1;
+
+  /* "matr_mult.pyx":32
+ *     cdef int cols_a = len(matrix_a[0])
+ * 
+ *     cdef int size_a = rows_a * cols_a             # <<<<<<<<<<<<<<
+ * 
+ *     cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))
+ */
+  __pyx_v_size_a = (__pyx_v_rows_a * __pyx_v_cols_a);
+
+  /* "matr_mult.pyx":34
+ *     cdef int size_a = rows_a * cols_a
+ * 
+ *     cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))             # <<<<<<<<<<<<<<
+ *     cdef double* c_matrix_b = <double*>malloc(size_a * sizeof(double))
+ *     cdef double* result_matrix = <double*>malloc(size_a * sizeof(double))
+ */
+  __pyx_v_c_matrix_a = ((double *)malloc((__pyx_v_size_a * (sizeof(double)))));
+
+  /* "matr_mult.pyx":35
+ * 
+ *     cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))
+ *     cdef double* c_matrix_b = <double*>malloc(size_a * sizeof(double))             # <<<<<<<<<<<<<<
+ *     cdef double* result_matrix = <double*>malloc(size_a * sizeof(double))
+ * 
+ */
+  __pyx_v_c_matrix_b = ((double *)malloc((__pyx_v_size_a * (sizeof(double)))));
+
+  /* "matr_mult.pyx":36
+ *     cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))
+ *     cdef double* c_matrix_b = <double*>malloc(size_a * sizeof(double))
+ *     cdef double* result_matrix = <double*>malloc(size_a * sizeof(double))             # <<<<<<<<<<<<<<
+ * 
+ *     for i in range(rows_a):
+ */
+  __pyx_v_result_matrix = ((double *)malloc((__pyx_v_size_a * (sizeof(double)))));
+
+  /* "matr_mult.pyx":38
+ *     cdef double* result_matrix = <double*>malloc(size_a * sizeof(double))
+ * 
+ *     for i in range(rows_a):             # <<<<<<<<<<<<<<
+ *         for j in range(cols_a):
+ *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
+ */
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_rows_a); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
+    __pyx_t_2 = __pyx_t_3; __Pyx_INCREF(__pyx_t_2);
+    __pyx_t_1 = 0;
+    __pyx_t_4 = NULL;
+  } else {
+    __pyx_t_1 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_4 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
+  }
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  for (;;) {
+    if (likely(!__pyx_t_4)) {
+      if (likely(PyList_CheckExact(__pyx_t_2))) {
+        {
+          Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_2);
+          #if !CYTHON_ASSUME_SAFE_MACROS
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 38, __pyx_L1_error)
+          #endif
+          if (__pyx_t_1 >= __pyx_temp) break;
+        }
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 38, __pyx_L1_error)
+        #else
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        #endif
+      } else {
+        {
+          Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_2);
+          #if !CYTHON_ASSUME_SAFE_MACROS
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 38, __pyx_L1_error)
+          #endif
+          if (__pyx_t_1 >= __pyx_temp) break;
+        }
+        #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 38, __pyx_L1_error)
+        #else
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        #endif
+      }
+    } else {
+      __pyx_t_3 = __pyx_t_4(__pyx_t_2);
+      if (unlikely(!__pyx_t_3)) {
+        PyObject* exc_type = PyErr_Occurred();
+        if (exc_type) {
+          if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+          else __PYX_ERR(0, 38, __pyx_L1_error)
+        }
+        break;
+      }
+      __Pyx_GOTREF(__pyx_t_3);
+    }
+    __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_3);
+    __pyx_t_3 = 0;
+
+    /* "matr_mult.pyx":39
+ * 
+ *     for i in range(rows_a):
+ *         for j in range(cols_a):             # <<<<<<<<<<<<<<
+ *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
+ *             c_matrix_b[i * cols_a + j] = matrix_b[i][j]
+ */
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_cols_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
+      __pyx_t_3 = __pyx_t_5; __Pyx_INCREF(__pyx_t_3);
+      __pyx_t_6 = 0;
+      __pyx_t_7 = NULL;
+    } else {
+      __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_3);
+      __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 39, __pyx_L1_error)
+    }
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    for (;;) {
+      if (likely(!__pyx_t_7)) {
+        if (likely(PyList_CheckExact(__pyx_t_3))) {
+          {
+            Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_3);
+            #if !CYTHON_ASSUME_SAFE_MACROS
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+            #endif
+            if (__pyx_t_6 >= __pyx_temp) break;
+          }
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+          #else
+          __pyx_t_5 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        } else {
+          {
+            Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_3);
+            #if !CYTHON_ASSUME_SAFE_MACROS
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+            #endif
+            if (__pyx_t_6 >= __pyx_temp) break;
+          }
+          #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+          #else
+          __pyx_t_5 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          #endif
+        }
+      } else {
+        __pyx_t_5 = __pyx_t_7(__pyx_t_3);
+        if (unlikely(!__pyx_t_5)) {
+          PyObject* exc_type = PyErr_Occurred();
+          if (exc_type) {
+            if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
+            else __PYX_ERR(0, 39, __pyx_L1_error)
+          }
+          break;
+        }
+        __Pyx_GOTREF(__pyx_t_5);
+      }
+      __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_5);
+      __pyx_t_5 = 0;
+
+      /* "matr_mult.pyx":40
+ *     for i in range(rows_a):
+ *         for j in range(cols_a):
+ *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]             # <<<<<<<<<<<<<<
+ *             c_matrix_b[i * cols_a + j] = matrix_b[i][j]
+ * 
+ */
+      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_matrix_a, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_v_j); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_8); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 40, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      __pyx_t_8 = __Pyx_PyInt_From_int(__pyx_v_cols_a); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __pyx_t_5 = PyNumber_Multiply(__pyx_v_i, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      __pyx_t_8 = PyNumber_Add(__pyx_t_5, __pyx_v_j); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_8); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 40, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      (__pyx_v_c_matrix_a[__pyx_t_10]) = __pyx_t_9;
+
+      /* "matr_mult.pyx":41
+ *         for j in range(cols_a):
+ *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
+ *             c_matrix_b[i * cols_a + j] = matrix_b[i][j]             # <<<<<<<<<<<<<<
+ * 
+ * 
+ */
+      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_matrix_b, __pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_cols_a); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_8 = PyNumber_Multiply(__pyx_v_i, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_5 = PyNumber_Add(__pyx_t_8, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_5); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      (__pyx_v_c_matrix_b[__pyx_t_10]) = __pyx_t_9;
+
+      /* "matr_mult.pyx":39
+ * 
+ *     for i in range(rows_a):
+ *         for j in range(cols_a):             # <<<<<<<<<<<<<<
+ *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
+ *             c_matrix_b[i * cols_a + j] = matrix_b[i][j]
+ */
+    }
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+
+    /* "matr_mult.pyx":38
+ *     cdef double* result_matrix = <double*>malloc(size_a * sizeof(double))
+ * 
+ *     for i in range(rows_a):             # <<<<<<<<<<<<<<
+ *         for j in range(cols_a):
+ *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
+ */
+  }
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "matr_mult.pyx":45
+ * 
+ * 
+ *     sum_matrices(c_matrix_a, c_matrix_b, result_matrix, rows_a, cols_a)             # <<<<<<<<<<<<<<
+ * 
+ *     result = [[result_matrix[i * cols_a + j] for j in range(cols_a)] for i in range(rows_a)]
+ */
+  sum_matrices(__pyx_v_c_matrix_a, __pyx_v_c_matrix_b, __pyx_v_result_matrix, __pyx_v_rows_a, __pyx_v_cols_a);
+
+  /* "matr_mult.pyx":47
+ *     sum_matrices(c_matrix_a, c_matrix_b, result_matrix, rows_a, cols_a)
+ * 
+ *     result = [[result_matrix[i * cols_a + j] for j in range(cols_a)] for i in range(rows_a)]             # <<<<<<<<<<<<<<
+ * 
+ *     free(c_matrix_a)
+ */
+  { /* enter inner scope */
+    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 47, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_11 = __pyx_v_rows_a;
+    __pyx_t_12 = __pyx_t_11;
+    for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
+      __pyx_7genexpr__pyx_v_i = __pyx_t_13;
+      { /* enter inner scope */
+        __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_3);
+        __pyx_t_14 = __pyx_v_cols_a;
+        __pyx_t_15 = __pyx_t_14;
+        for (__pyx_t_16 = 0; __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
+          __pyx_8genexpr1__pyx_v_j = __pyx_t_16;
+          __pyx_t_5 = PyFloat_FromDouble((__pyx_v_result_matrix[((__pyx_7genexpr__pyx_v_i * __pyx_v_cols_a) + __pyx_8genexpr1__pyx_v_j)])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 47, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_5);
+          if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 47, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        }
+      } /* exit inner scope */
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_3))) __PYX_ERR(0, 47, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    }
+  } /* exit inner scope */
+  __pyx_v_result = ((PyObject*)__pyx_t_2);
+  __pyx_t_2 = 0;
+
+  /* "matr_mult.pyx":49
+ *     result = [[result_matrix[i * cols_a + j] for j in range(cols_a)] for i in range(rows_a)]
+ * 
+ *     free(c_matrix_a)             # <<<<<<<<<<<<<<
+ *     free(c_matrix_b)
+ *     free(result_matrix)
+ */
+  free(__pyx_v_c_matrix_a);
+
+  /* "matr_mult.pyx":50
+ * 
+ *     free(c_matrix_a)
+ *     free(c_matrix_b)             # <<<<<<<<<<<<<<
+ *     free(result_matrix)
+ * 
+ */
+  free(__pyx_v_c_matrix_b);
+
+  /* "matr_mult.pyx":51
+ *     free(c_matrix_a)
+ *     free(c_matrix_b)
+ *     free(result_matrix)             # <<<<<<<<<<<<<<
+ * 
+ *     return result
+ */
+  free(__pyx_v_result_matrix);
+
+  /* "matr_mult.pyx":53
+ *     free(result_matrix)
+ * 
+ *     return result             # <<<<<<<<<<<<<<
+ * 
+ * 
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(__pyx_v_result);
+  __pyx_r = __pyx_v_result;
+  goto __pyx_L0;
+
+  /* "matr_mult.pyx":8
+ * 
+ * 
+ * def sum_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
+ * 
+ *     """
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_5);
+  __Pyx_XDECREF(__pyx_t_8);
+  __Pyx_AddTraceback("matr_mult.sum_matrices_wrapper", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_XDECREF(__pyx_v_i);
+  __Pyx_XDECREF(__pyx_v_j);
+  __Pyx_XDECREF(__pyx_v_result);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "matr_mult.pyx":56
+ * 
  * 
  * def multiply_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
  * 
@@ -2396,16 +2949,16 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_9matr_mult_1multiply_matrices_wrapper(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_9matr_mult_3multiply_matrices_wrapper(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_9matr_mult_multiply_matrices_wrapper, "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n\n    ");
-static PyMethodDef __pyx_mdef_9matr_mult_1multiply_matrices_wrapper = {"multiply_matrices_wrapper", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_9matr_mult_1multiply_matrices_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_9matr_mult_multiply_matrices_wrapper};
-static PyObject *__pyx_pw_9matr_mult_1multiply_matrices_wrapper(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_9matr_mult_2multiply_matrices_wrapper, "\n    This module provides a wrapper function for multiplying two matrices using a C implementation.\n\n    Parameters:\n        matrix_a (List[List[float]]): The first matrix to multiply.\n        matrix_b (List[List[float]]): The second matrix to multiply.\n\n    Returns:\n        List[List[float]]: The result of the matrix multiplication.\n\n    Example:\n        >>> matrix_a = [[1, 2], [3, 4]]\n        >>> matrix_b = [[5, 6], [7, 8]]\n        >>> multiply_matrices_wrapper(matrix_a, matrix_b)\n        [[19, 22], [43, 50]]\n\n    ");
+static PyMethodDef __pyx_mdef_9matr_mult_3multiply_matrices_wrapper = {"multiply_matrices_wrapper", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_9matr_mult_3multiply_matrices_wrapper, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_9matr_mult_2multiply_matrices_wrapper};
+static PyObject *__pyx_pw_9matr_mult_3multiply_matrices_wrapper(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -2452,7 +3005,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 6, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -2460,14 +3013,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 6, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 56, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("multiply_matrices_wrapper", 1, 2, 2, 1); __PYX_ERR(0, 6, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("multiply_matrices_wrapper", 1, 2, 2, 1); __PYX_ERR(0, 56, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "multiply_matrices_wrapper") < 0)) __PYX_ERR(0, 6, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "multiply_matrices_wrapper") < 0)) __PYX_ERR(0, 56, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -2480,7 +3033,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("multiply_matrices_wrapper", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 6, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("multiply_matrices_wrapper", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 56, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -2494,7 +3047,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_9matr_mult_multiply_matrices_wrapper(__pyx_self, __pyx_v_matrix_a, __pyx_v_matrix_b);
+  __pyx_r = __pyx_pf_9matr_mult_2multiply_matrices_wrapper(__pyx_self, __pyx_v_matrix_a, __pyx_v_matrix_b);
 
   /* function exit code */
   {
@@ -2507,7 +3060,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_matrix_a, PyObject *__pyx_v_matrix_b) {
+static PyObject *__pyx_pf_9matr_mult_2multiply_matrices_wrapper(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_matrix_a, PyObject *__pyx_v_matrix_b) {
   int __pyx_v_rows_a;
   int __pyx_v_cols_a;
   int __pyx_v_rows_b;
@@ -2521,8 +3074,8 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
   PyObject *__pyx_v_i = NULL;
   PyObject *__pyx_v_j = NULL;
   PyObject *__pyx_v_result = NULL;
-  int __pyx_7genexpr__pyx_v_i;
-  int __pyx_8genexpr1__pyx_v_j;
+  int __pyx_8genexpr2__pyx_v_i;
+  int __pyx_8genexpr3__pyx_v_j;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
@@ -2546,53 +3099,53 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("multiply_matrices_wrapper", 1);
 
-  /* "matr_mult.pyx":26
+  /* "matr_mult.pyx":76
  *     """
  * 
  *     cdef int rows_a = len(matrix_a)             # <<<<<<<<<<<<<<
  *     cdef int cols_a = len(matrix_a[0])
  *     cdef int rows_b = len(matrix_b)
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_matrix_a); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_matrix_a); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 76, __pyx_L1_error)
   __pyx_v_rows_a = __pyx_t_1;
 
-  /* "matr_mult.pyx":27
+  /* "matr_mult.pyx":77
  * 
  *     cdef int rows_a = len(matrix_a)
  *     cdef int cols_a = len(matrix_a[0])             # <<<<<<<<<<<<<<
  *     cdef int rows_b = len(matrix_b)
  *     cdef int cols_b = len(matrix_b[0])
  */
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_matrix_a, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_matrix_a, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_cols_a = __pyx_t_1;
 
-  /* "matr_mult.pyx":28
+  /* "matr_mult.pyx":78
  *     cdef int rows_a = len(matrix_a)
  *     cdef int cols_a = len(matrix_a[0])
  *     cdef int rows_b = len(matrix_b)             # <<<<<<<<<<<<<<
  *     cdef int cols_b = len(matrix_b[0])
  * 
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_matrix_b); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_matrix_b); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 78, __pyx_L1_error)
   __pyx_v_rows_b = __pyx_t_1;
 
-  /* "matr_mult.pyx":29
+  /* "matr_mult.pyx":79
  *     cdef int cols_a = len(matrix_a[0])
  *     cdef int rows_b = len(matrix_b)
  *     cdef int cols_b = len(matrix_b[0])             # <<<<<<<<<<<<<<
  * 
  *     cdef int size_a = rows_a * cols_a
  */
-  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_matrix_b, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_matrix_b, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_cols_b = __pyx_t_1;
 
-  /* "matr_mult.pyx":31
+  /* "matr_mult.pyx":81
  *     cdef int cols_b = len(matrix_b[0])
  * 
  *     cdef int size_a = rows_a * cols_a             # <<<<<<<<<<<<<<
@@ -2601,7 +3154,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   __pyx_v_size_a = (__pyx_v_rows_a * __pyx_v_cols_a);
 
-  /* "matr_mult.pyx":32
+  /* "matr_mult.pyx":82
  * 
  *     cdef int size_a = rows_a * cols_a
  *     cdef int size_b = rows_b * cols_b             # <<<<<<<<<<<<<<
@@ -2610,7 +3163,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   __pyx_v_size_b = (__pyx_v_rows_b * __pyx_v_cols_b);
 
-  /* "matr_mult.pyx":33
+  /* "matr_mult.pyx":83
  *     cdef int size_a = rows_a * cols_a
  *     cdef int size_b = rows_b * cols_b
  *     cdef int size_result = rows_a * cols_b             # <<<<<<<<<<<<<<
@@ -2619,7 +3172,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   __pyx_v_size_result = (__pyx_v_rows_a * __pyx_v_cols_b);
 
-  /* "matr_mult.pyx":35
+  /* "matr_mult.pyx":85
  *     cdef int size_result = rows_a * cols_b
  * 
  *     cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))             # <<<<<<<<<<<<<<
@@ -2628,7 +3181,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   __pyx_v_c_matrix_a = ((double *)malloc((__pyx_v_size_a * (sizeof(double)))));
 
-  /* "matr_mult.pyx":36
+  /* "matr_mult.pyx":86
  * 
  *     cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))
  *     cdef double* c_matrix_b = <double*>malloc(size_b * sizeof(double))             # <<<<<<<<<<<<<<
@@ -2637,7 +3190,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   __pyx_v_c_matrix_b = ((double *)malloc((__pyx_v_size_b * (sizeof(double)))));
 
-  /* "matr_mult.pyx":37
+  /* "matr_mult.pyx":87
  *     cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))
  *     cdef double* c_matrix_b = <double*>malloc(size_b * sizeof(double))
  *     cdef double* result_matrix = <double*>malloc(size_result * sizeof(double))             # <<<<<<<<<<<<<<
@@ -2646,16 +3199,16 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   __pyx_v_result_matrix = ((double *)malloc((__pyx_v_size_result * (sizeof(double)))));
 
-  /* "matr_mult.pyx":39
+  /* "matr_mult.pyx":89
  *     cdef double* result_matrix = <double*>malloc(size_result * sizeof(double))
  * 
  *     for i in range(rows_a):             # <<<<<<<<<<<<<<
  *         for j in range(cols_a):
  *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
  */
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_rows_a); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_rows_a); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
@@ -2663,9 +3216,9 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
     __pyx_t_1 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_1 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_1 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -2674,28 +3227,28 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 89, __pyx_L1_error)
           #endif
           if (__pyx_t_1 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 89, __pyx_L1_error)
         #else
-        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 89, __pyx_L1_error)
           #endif
           if (__pyx_t_1 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 89, __pyx_L1_error)
         #else
-        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 89, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -2705,7 +3258,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 39, __pyx_L1_error)
+          else __PYX_ERR(0, 89, __pyx_L1_error)
         }
         break;
       }
@@ -2714,16 +3267,16 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "matr_mult.pyx":40
+    /* "matr_mult.pyx":90
  * 
  *     for i in range(rows_a):
  *         for j in range(cols_a):             # <<<<<<<<<<<<<<
  *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
  * 
  */
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_cols_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_cols_a); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (likely(PyList_CheckExact(__pyx_t_5)) || PyTuple_CheckExact(__pyx_t_5)) {
@@ -2731,9 +3284,9 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
       __pyx_t_6 = 0;
       __pyx_t_7 = NULL;
     } else {
-      __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 90, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 40, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 90, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     for (;;) {
@@ -2742,28 +3295,28 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
           {
             Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_3);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 40, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 90, __pyx_L1_error)
             #endif
             if (__pyx_t_6 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_5 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 90, __pyx_L1_error)
           #else
-          __pyx_t_5 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 90, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
         } else {
           {
             Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_3);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 40, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 90, __pyx_L1_error)
             #endif
             if (__pyx_t_6 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_5 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_5); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 90, __pyx_L1_error)
           #else
-          __pyx_t_5 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
+          __pyx_t_5 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 90, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
         }
@@ -2773,7 +3326,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 40, __pyx_L1_error)
+            else __PYX_ERR(0, 90, __pyx_L1_error)
           }
           break;
         }
@@ -2782,33 +3335,33 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
       __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_5);
       __pyx_t_5 = 0;
 
-      /* "matr_mult.pyx":41
+      /* "matr_mult.pyx":91
  *     for i in range(rows_a):
  *         for j in range(cols_a):
  *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]             # <<<<<<<<<<<<<<
  * 
  *     for i in range(rows_b):
  */
-      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_matrix_a, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_matrix_a, __pyx_v_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_v_j); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_v_j); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 91, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_8); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_8); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 91, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyInt_From_int(__pyx_v_cols_a); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_From_int(__pyx_v_cols_a); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 91, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_5 = PyNumber_Multiply(__pyx_v_i, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_5 = PyNumber_Multiply(__pyx_v_i, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = PyNumber_Add(__pyx_t_5, __pyx_v_j); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_8 = PyNumber_Add(__pyx_t_5, __pyx_v_j); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 91, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_8); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_8); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 91, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       (__pyx_v_c_matrix_a[__pyx_t_10]) = __pyx_t_9;
 
-      /* "matr_mult.pyx":40
+      /* "matr_mult.pyx":90
  * 
  *     for i in range(rows_a):
  *         for j in range(cols_a):             # <<<<<<<<<<<<<<
@@ -2818,7 +3371,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "matr_mult.pyx":39
+    /* "matr_mult.pyx":89
  *     cdef double* result_matrix = <double*>malloc(size_result * sizeof(double))
  * 
  *     for i in range(rows_a):             # <<<<<<<<<<<<<<
@@ -2828,16 +3381,16 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "matr_mult.pyx":43
+  /* "matr_mult.pyx":93
  *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
  * 
  *     for i in range(rows_b):             # <<<<<<<<<<<<<<
  *         for j in range(cols_b):
  *             c_matrix_b[i * cols_b + j] = matrix_b[i][j]
  */
-  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_rows_b); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_rows_b); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
@@ -2845,9 +3398,9 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
     __pyx_t_1 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_1 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_1 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 93, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 93, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -2856,28 +3409,28 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 43, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 93, __pyx_L1_error)
           #endif
           if (__pyx_t_1 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 93, __pyx_L1_error)
         #else
-        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 93, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_2);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 43, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 93, __pyx_L1_error)
           #endif
           if (__pyx_t_1 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely((0 < 0))) __PYX_ERR(0, 93, __pyx_L1_error)
         #else
-        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 93, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -2887,7 +3440,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 43, __pyx_L1_error)
+          else __PYX_ERR(0, 93, __pyx_L1_error)
         }
         break;
       }
@@ -2896,16 +3449,16 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "matr_mult.pyx":44
+    /* "matr_mult.pyx":94
  * 
  *     for i in range(rows_b):
  *         for j in range(cols_b):             # <<<<<<<<<<<<<<
  *             c_matrix_b[i * cols_b + j] = matrix_b[i][j]
  * 
  */
-    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_cols_b); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_cols_b); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (likely(PyList_CheckExact(__pyx_t_8)) || PyTuple_CheckExact(__pyx_t_8)) {
@@ -2913,9 +3466,9 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
       __pyx_t_6 = 0;
       __pyx_t_7 = NULL;
     } else {
-      __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __pyx_t_6 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 94, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 94, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     for (;;) {
@@ -2924,28 +3477,28 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
           {
             Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_3);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 44, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 94, __pyx_L1_error)
             #endif
             if (__pyx_t_6 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_8 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_8); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_8 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_8); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 94, __pyx_L1_error)
           #else
-          __pyx_t_8 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 94, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           #endif
         } else {
           {
             Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_3);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 44, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 94, __pyx_L1_error)
             #endif
             if (__pyx_t_6 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_8); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_6); __Pyx_INCREF(__pyx_t_8); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 94, __pyx_L1_error)
           #else
-          __pyx_t_8 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 44, __pyx_L1_error)
+          __pyx_t_8 = __Pyx_PySequence_ITEM(__pyx_t_3, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 94, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_8);
           #endif
         }
@@ -2955,7 +3508,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 44, __pyx_L1_error)
+            else __PYX_ERR(0, 94, __pyx_L1_error)
           }
           break;
         }
@@ -2964,33 +3517,33 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
       __Pyx_XDECREF_SET(__pyx_v_j, __pyx_t_8);
       __pyx_t_8 = 0;
 
-      /* "matr_mult.pyx":45
+      /* "matr_mult.pyx":95
  *     for i in range(rows_b):
  *         for j in range(cols_b):
  *             c_matrix_b[i * cols_b + j] = matrix_b[i][j]             # <<<<<<<<<<<<<<
  * 
  *     multiply_matrices(c_matrix_a, c_matrix_b, result_matrix, rows_a, cols_a, rows_b, cols_b)
  */
-      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_matrix_b, __pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_matrix_b, __pyx_v_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_cols_b); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_cols_b); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_8 = PyNumber_Multiply(__pyx_v_i, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_8 = PyNumber_Multiply(__pyx_v_i, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = PyNumber_Add(__pyx_t_8, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_5 = PyNumber_Add(__pyx_t_8, __pyx_v_j); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_5); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyIndex_AsSsize_t(__pyx_t_5); if (unlikely((__pyx_t_10 == (Py_ssize_t)-1) && PyErr_Occurred())) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       (__pyx_v_c_matrix_b[__pyx_t_10]) = __pyx_t_9;
 
-      /* "matr_mult.pyx":44
+      /* "matr_mult.pyx":94
  * 
  *     for i in range(rows_b):
  *         for j in range(cols_b):             # <<<<<<<<<<<<<<
@@ -3000,7 +3553,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "matr_mult.pyx":43
+    /* "matr_mult.pyx":93
  *             c_matrix_a[i * cols_a + j] = matrix_a[i][j]
  * 
  *     for i in range(rows_b):             # <<<<<<<<<<<<<<
@@ -3010,7 +3563,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "matr_mult.pyx":47
+  /* "matr_mult.pyx":97
  *             c_matrix_b[i * cols_b + j] = matrix_b[i][j]
  * 
  *     multiply_matrices(c_matrix_a, c_matrix_b, result_matrix, rows_a, cols_a, rows_b, cols_b)             # <<<<<<<<<<<<<<
@@ -3019,7 +3572,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   multiply_matrices(__pyx_v_c_matrix_a, __pyx_v_c_matrix_b, __pyx_v_result_matrix, __pyx_v_rows_a, __pyx_v_cols_a, __pyx_v_rows_b, __pyx_v_cols_b);
 
-  /* "matr_mult.pyx":49
+  /* "matr_mult.pyx":99
  *     multiply_matrices(c_matrix_a, c_matrix_b, result_matrix, rows_a, cols_a, rows_b, cols_b)
  * 
  *     result = [[result_matrix[i * cols_b + j] for j in range(cols_b)] for i in range(rows_a)]             # <<<<<<<<<<<<<<
@@ -3027,33 +3580,33 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  *     free(c_matrix_a)
  */
   { /* enter inner scope */
-    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_11 = __pyx_v_rows_a;
     __pyx_t_12 = __pyx_t_11;
     for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
-      __pyx_7genexpr__pyx_v_i = __pyx_t_13;
+      __pyx_8genexpr2__pyx_v_i = __pyx_t_13;
       { /* enter inner scope */
-        __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
+        __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __pyx_t_14 = __pyx_v_cols_b;
         __pyx_t_15 = __pyx_t_14;
         for (__pyx_t_16 = 0; __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
-          __pyx_8genexpr1__pyx_v_j = __pyx_t_16;
-          __pyx_t_5 = PyFloat_FromDouble((__pyx_v_result_matrix[((__pyx_7genexpr__pyx_v_i * __pyx_v_cols_b) + __pyx_8genexpr1__pyx_v_j)])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 49, __pyx_L1_error)
+          __pyx_8genexpr3__pyx_v_j = __pyx_t_16;
+          __pyx_t_5 = PyFloat_FromDouble((__pyx_v_result_matrix[((__pyx_8genexpr2__pyx_v_i * __pyx_v_cols_b) + __pyx_8genexpr3__pyx_v_j)])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 99, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_5);
-          if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 49, __pyx_L1_error)
+          if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 99, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         }
       } /* exit inner scope */
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_3))) __PYX_ERR(0, 49, __pyx_L1_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_t_3))) __PYX_ERR(0, 99, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
   } /* exit inner scope */
   __pyx_v_result = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "matr_mult.pyx":51
+  /* "matr_mult.pyx":101
  *     result = [[result_matrix[i * cols_b + j] for j in range(cols_b)] for i in range(rows_a)]
  * 
  *     free(c_matrix_a)             # <<<<<<<<<<<<<<
@@ -3062,7 +3615,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   free(__pyx_v_c_matrix_a);
 
-  /* "matr_mult.pyx":52
+  /* "matr_mult.pyx":102
  * 
  *     free(c_matrix_a)
  *     free(c_matrix_b)             # <<<<<<<<<<<<<<
@@ -3071,7 +3624,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   free(__pyx_v_c_matrix_b);
 
-  /* "matr_mult.pyx":53
+  /* "matr_mult.pyx":103
  *     free(c_matrix_a)
  *     free(c_matrix_b)
  *     free(result_matrix)             # <<<<<<<<<<<<<<
@@ -3080,7 +3633,7 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
  */
   free(__pyx_v_result_matrix);
 
-  /* "matr_mult.pyx":55
+  /* "matr_mult.pyx":105
  *     free(result_matrix)
  * 
  *     return result             # <<<<<<<<<<<<<<
@@ -3090,8 +3643,8 @@ static PyObject *__pyx_pf_9matr_mult_multiply_matrices_wrapper(CYTHON_UNUSED PyO
   __pyx_r = __pyx_v_result;
   goto __pyx_L0;
 
-  /* "matr_mult.pyx":6
- *     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
+  /* "matr_mult.pyx":56
+ * 
  * 
  * def multiply_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
  * 
@@ -3132,7 +3685,8 @@ static PyMethodDef __pyx_methods[] = {
 static int __Pyx_CreateStringTabAndInitStrings(void) {
   __Pyx_StringTabEntry __pyx_string_tab[] = {
     {&__pyx_kp_u_This_module_provides_a_wrapper, __pyx_k_This_module_provides_a_wrapper, sizeof(__pyx_k_This_module_provides_a_wrapper), 0, 1, 0, 0},
-    {&__pyx_n_s__3, __pyx_k__3, sizeof(__pyx_k__3), 0, 0, 1, 1},
+    {&__pyx_kp_u_This_module_provides_a_wrapper_2, __pyx_k_This_module_provides_a_wrapper_2, sizeof(__pyx_k_This_module_provides_a_wrapper_2), 0, 1, 0, 0},
+    {&__pyx_n_s__5, __pyx_k__5, sizeof(__pyx_k__5), 0, 0, 1, 1},
     {&__pyx_n_s_asyncio_coroutines, __pyx_k_asyncio_coroutines, sizeof(__pyx_k_asyncio_coroutines), 0, 0, 1, 1},
     {&__pyx_n_s_c_matrix_a, __pyx_k_c_matrix_a, sizeof(__pyx_k_c_matrix_a), 0, 0, 1, 1},
     {&__pyx_n_s_c_matrix_b, __pyx_k_c_matrix_b, sizeof(__pyx_k_c_matrix_b), 0, 0, 1, 1},
@@ -3149,7 +3703,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_matrix_b, __pyx_k_matrix_b, sizeof(__pyx_k_matrix_b), 0, 0, 1, 1},
     {&__pyx_kp_s_matrix_mult_matr_mult_pyx, __pyx_k_matrix_mult_matr_mult_pyx, sizeof(__pyx_k_matrix_mult_matr_mult_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_multiply_matrices_wrapper, __pyx_k_multiply_matrices_wrapper, sizeof(__pyx_k_multiply_matrices_wrapper), 0, 0, 1, 1},
-    {&__pyx_kp_u_multiply_matrices_wrapper_line_6, __pyx_k_multiply_matrices_wrapper_line_6, sizeof(__pyx_k_multiply_matrices_wrapper_line_6), 0, 1, 0, 0},
+    {&__pyx_kp_u_multiply_matrices_wrapper_line_5, __pyx_k_multiply_matrices_wrapper_line_5, sizeof(__pyx_k_multiply_matrices_wrapper_line_5), 0, 1, 0, 0},
     {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
     {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
     {&__pyx_n_s_result, __pyx_k_result, sizeof(__pyx_k_result), 0, 0, 1, 1},
@@ -3159,6 +3713,8 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_size_a, __pyx_k_size_a, sizeof(__pyx_k_size_a), 0, 0, 1, 1},
     {&__pyx_n_s_size_b, __pyx_k_size_b, sizeof(__pyx_k_size_b), 0, 0, 1, 1},
     {&__pyx_n_s_size_result, __pyx_k_size_result, sizeof(__pyx_k_size_result), 0, 0, 1, 1},
+    {&__pyx_n_s_sum_matrices_wrapper, __pyx_k_sum_matrices_wrapper, sizeof(__pyx_k_sum_matrices_wrapper), 0, 0, 1, 1},
+    {&__pyx_kp_u_sum_matrices_wrapper_line_8, __pyx_k_sum_matrices_wrapper_line_8, sizeof(__pyx_k_sum_matrices_wrapper_line_8), 0, 1, 0, 0},
     {&__pyx_n_s_test, __pyx_k_test, sizeof(__pyx_k_test), 0, 0, 1, 1},
     {0, 0, 0, 0, 0, 0, 0}
   };
@@ -3166,7 +3722,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 38, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -3177,17 +3733,29 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "matr_mult.pyx":6
- *     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
+  /* "matr_mult.pyx":8
+ * 
+ * 
+ * def sum_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
+ * 
+ *     """
+ */
+  __pyx_tuple_ = PyTuple_Pack(13, __pyx_n_s_matrix_a, __pyx_n_s_matrix_b, __pyx_n_s_rows_a, __pyx_n_s_cols_a, __pyx_n_s_size_a, __pyx_n_s_c_matrix_a, __pyx_n_s_c_matrix_b, __pyx_n_s_result_matrix, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_result, __pyx_n_s_i, __pyx_n_s_j); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple_);
+  __Pyx_GIVEREF(__pyx_tuple_);
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_matrix_mult_matr_mult_pyx, __pyx_n_s_sum_matrices_wrapper, 8, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 8, __pyx_L1_error)
+
+  /* "matr_mult.pyx":56
+ * 
  * 
  * def multiply_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
  * 
  *     """
  */
-  __pyx_tuple_ = PyTuple_Pack(17, __pyx_n_s_matrix_a, __pyx_n_s_matrix_b, __pyx_n_s_rows_a, __pyx_n_s_cols_a, __pyx_n_s_rows_b, __pyx_n_s_cols_b, __pyx_n_s_size_a, __pyx_n_s_size_b, __pyx_n_s_size_result, __pyx_n_s_c_matrix_a, __pyx_n_s_c_matrix_b, __pyx_n_s_result_matrix, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_result, __pyx_n_s_i, __pyx_n_s_j); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 6, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple_);
-  __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 17, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_matrix_mult_matr_mult_pyx, __pyx_n_s_multiply_matrices_wrapper, 6, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(17, __pyx_n_s_matrix_a, __pyx_n_s_matrix_b, __pyx_n_s_rows_a, __pyx_n_s_cols_a, __pyx_n_s_rows_b, __pyx_n_s_cols_b, __pyx_n_s_size_a, __pyx_n_s_size_b, __pyx_n_s_size_result, __pyx_n_s_c_matrix_a, __pyx_n_s_c_matrix_b, __pyx_n_s_result_matrix, __pyx_n_s_i, __pyx_n_s_j, __pyx_n_s_result, __pyx_n_s_i, __pyx_n_s_j); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__3);
+  __Pyx_GIVEREF(__pyx_tuple__3);
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 17, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_matrix_mult_matr_mult_pyx, __pyx_n_s_multiply_matrices_wrapper, 56, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -3551,16 +4119,28 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "matr_mult.pyx":6
- *     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
+  /* "matr_mult.pyx":8
+ * 
+ * 
+ * def sum_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
+ * 
+ *     """
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_9matr_mult_1sum_matrices_wrapper, 0, __pyx_n_s_sum_matrices_wrapper, NULL, __pyx_n_s_matr_mult, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sum_matrices_wrapper, __pyx_t_2) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+  /* "matr_mult.pyx":56
+ * 
  * 
  * def multiply_matrices_wrapper(matrix_a, matrix_b):             # <<<<<<<<<<<<<<
  * 
  *     """
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_9matr_mult_1multiply_matrices_wrapper, 0, __pyx_n_s_multiply_matrices_wrapper, NULL, __pyx_n_s_matr_mult, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_9matr_mult_3multiply_matrices_wrapper, 0, __pyx_n_s_multiply_matrices_wrapper, NULL, __pyx_n_s_matr_mult, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_multiply_matrices_wrapper, __pyx_t_2) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_multiply_matrices_wrapper, __pyx_t_2) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "matr_mult.pyx":1
@@ -3568,9 +4148,10 @@ if (!__Pyx_RefNanny) {
  * 
  * cdef extern from "lowlevel\matr_m.c" nogil:
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_kp_u_multiply_matrices_wrapper_line_6, __pyx_kp_u_This_module_provides_a_wrapper) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_kp_u_sum_matrices_wrapper_line_8, __pyx_kp_u_This_module_provides_a_wrapper) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_kp_u_multiply_matrices_wrapper_line_5, __pyx_kp_u_This_module_provides_a_wrapper_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
@@ -6650,7 +7231,7 @@ __Pyx_PyType_GetName(PyTypeObject* tp)
     if (unlikely(name == NULL) || unlikely(!PyUnicode_Check(name))) {
         PyErr_Clear();
         Py_XDECREF(name);
-        name = __Pyx_NewRef(__pyx_n_s__3);
+        name = __Pyx_NewRef(__pyx_n_s__5);
     }
     return name;
 }

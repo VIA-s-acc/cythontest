@@ -10,3 +10,11 @@ void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix
         }
     }
 }
+
+void sum_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows, int cols) {
+    for (int i = 0; i < rows; ++i) {
+        for (int j = 0; j < cols; ++j) {
+            result_matrix[i * cols + j] = matrix_a[i * cols + j] + matrix_b[i * cols + j];
+        }
+    }
+}

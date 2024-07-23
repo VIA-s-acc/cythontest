@@ -2,6 +2,56 @@ from libc.stdlib cimport malloc, free
 
 cdef extern from "lowlevel\matr_m.c" nogil:
     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
+    void sum_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows, int cols) 
+
+
+def sum_matrices_wrapper(matrix_a, matrix_b):
+    
+    """
+    This module provides a wrapper function for summing two matrices using a C implementation.
+
+    Parameters:
+        matrix_a (List[List[float]]): The first matrix to sum.
+        matrix_b (List[List[float]]): The second matrix to sum.
+
+    Returns:
+        List[List[float]]: The sum of the two matrices.
+
+    Example:
+        >>> matrix_a = [[1, 2], [3, 4]]
+        >>> matrix_b = [[5, 6], [7, 8]]
+        >>> sum_matrices_wrapper(matrix_a, matrix_b)
+        [[6, 8], [10, 12]]
+
+    """
+
+
+    cdef int rows_a = len(matrix_a)
+    cdef int cols_a = len(matrix_a[0])
+    
+    cdef int size_a = rows_a * cols_a
+    
+    cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))
+    cdef double* c_matrix_b = <double*>malloc(size_a * sizeof(double))
+    cdef double* result_matrix = <double*>malloc(size_a * sizeof(double))
+    
+    for i in range(rows_a):
+        for j in range(cols_a):
+            c_matrix_a[i * cols_a + j] = matrix_a[i][j]
+            c_matrix_b[i * cols_a + j] = matrix_b[i][j]
+
+
+
+    sum_matrices(c_matrix_a, c_matrix_b, result_matrix, rows_a, cols_a)
+    
+    result = [[result_matrix[i * cols_a + j] for j in range(cols_a)] for i in range(rows_a)]
+    
+    free(c_matrix_a)
+    free(c_matrix_b)
+    free(result_matrix)
+    
+    return result
+
 
 def multiply_matrices_wrapper(matrix_a, matrix_b):
         
