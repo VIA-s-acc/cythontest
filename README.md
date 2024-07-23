@@ -19,6 +19,20 @@ Elapsed time: 2.135 | type: Cython
 Elapsed time: 165.009 | type: Python
 
 Cython is faster than Python ~ about 77 times ( in this case )
+
 ```
+
 ![Comparison](media/cy_py.png)
+
+#### Averages:
+-----
+```go
+matrix sizes 521x241 and 241x652 | num_iterations = 100 
+
+Average cython time: 0.1339475417137146
+Average cython time: 9.9339475417137146
+```
+
+
+
 
