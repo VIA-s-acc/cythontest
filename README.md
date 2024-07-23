@@ -27,7 +27,7 @@ Cython is faster than Python ~ about 77 times ( in this case )
 #### Averages:
 -----
 ```go
-matrix sizes 521x241 and 241x652 | num_iterations = 100 
+matrix sizes 521 x 241 and 241 x 652 | num_iterations = 100 
 
 Average cython time: 0.1339475417137146
 Average cython time: 9.9339475417137146
