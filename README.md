@@ -39,7 +39,7 @@ Average cython time: 9.9339475417137146
 
 | Matrix A Size | Matrix B Size | Operation    | Iterations | Cython               | Python                |
 | ------------- | ------------- | :--------    | ---------- | ------               | ------                |
-| 521 x 241     | 241 x 652     |  Multiply    | 100        |0.1339475417137146 sec| 9.9339475417137146 sec|
+| 521 x 241     | 241 x 652     |  Multiply    | 100        |0.134 sec             | 9.934   sec           |
 | 2500 x 250    | 250 x 2500    |  Multiply    | 1          |2.135 sec             | 165.009 sec           |
 | 1000 x 1000   | None          |  Determinant | 1          |0.315 sec             | 33.747  sec           |
 | 2000 x 2000   | None          |  Determinant | 1          |2.603 sec             | 271.484 sec           |
