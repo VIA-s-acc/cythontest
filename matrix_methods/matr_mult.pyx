@@ -3,7 +3,26 @@ from libc.stdlib cimport malloc, free
 cdef extern from "lowlevel\matr_m.c" nogil:
     void multiply_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows_a, int cols_a, int rows_b, int cols_b)
     void sum_matrices(double* matrix_a, double* matrix_b, double* result_matrix, int rows, int cols) 
+    double det(double* matrix, int rows, int cols) 
 
+
+def determinant(matrix_a):
+    
+    cdef int rows_a = len(matrix_a)
+    cdef int cols_a = len(matrix_a[0])
+
+    cdef int size_a = rows_a * cols_a 
+    cdef double* c_matrix_a = <double*>malloc(size_a * sizeof(double))
+    for i in range(rows_a):
+        for j in range(cols_a):
+            c_matrix_a[i * cols_a + j] = matrix_a[i][j]
+    cdef double result = 0
+
+    result = det(c_matrix_a, rows_a, cols_a)
+
+    free(c_matrix_a)
+    
+    return result
 
 def sum_matrices_wrapper(matrix_a, matrix_b):
     

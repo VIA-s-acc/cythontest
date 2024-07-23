@@ -2,7 +2,7 @@ from setuptools import setup
 from distutils.extension import Extension
 from Cython.Distutils import build_ext
 
-sourceFiles = ['matrix_mult/matr_mult.pyx']
+sourceFiles = ['matrix_methods/matr_mult.pyx']
 
 ext_modules = [
     Extension("matr_mult", 

@@ -1,7 +1,15 @@
 from time import time 
-from .build.matr_mult import multiply_matrices_wrapper, sum_matrices_wrapper
+from .build.matr_mult import multiply_matrices_wrapper, sum_matrices_wrapper, determinant
 import random
-
+from math import isnan
+from copy import deepcopy
+def c_det(matrix):
+    if len(matrix) != len(matrix[0]):
+        raise ValueError("The matrix must be square")
+    res = determinant(matrix)
+    if isnan(res):
+        raise ValueError("NaN value")
+    return res     
 
 def matmult(a, b):
     if len(a[0]) != len(b):
@@ -40,6 +48,29 @@ def performance(f, type = "C"):
     handler.resultString = None
     return handler
 
+def deter(matrix):
+
+    A = deepcopy(matrix)
+    n = len(A)
+    if n != len(A[0]):
+        raise ValueError("The matrix must be square.")
+
+    det = 1
+    for i in range(n):
+
+        max_row = i
+        for k in range(i+1, n):
+            if abs(A[k][i]) > abs(A[max_row][i]):
+                max_row = k
+
+        det *= A[i][i]
+
+        for k in range(i+1, n):
+            if A[i][i] != 0:
+                factor = -A[k][i] / A[i][i]
+                for j in range(i+1, n):
+                    A[k][j] += factor * A[i][j]
+    return det
 
 def get_average(f, iterations = 10, rows_a = 521, cols_a = 241, rows_b = 241, cols_b = 652):
     timers = []
@@ -70,6 +101,15 @@ if __name__ == "__main__":
     average_p = get_average(p_func, iterations = num_iterations)
     print(f"Average python time: {average_p} in num_iterations = {num_iterations} |\n matrix sizes {rows_a}x{cols_a} and {rows_b}x{cols_b}")
     
+    matrix = [[random.randint(1,5) if i == j else 0 for i in range(2500)] for j in range(2500)]
+    cp_det = performance(c_det)
+    p_det = performance(deter, type = 'P')
+    res = cp_det(matrix)
+    print(cp_det.resultString)
+    print(res)
+    res1 = p_det(matrix)
 
-    print(dir(mm))
+    print(p_det.resultString)
+    print(res1)
+    
 
