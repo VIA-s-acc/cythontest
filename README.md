@@ -8,7 +8,7 @@ Example of Cython using
 - [.pyx file](matrix_methods/matr_mult.pyx)
 
 ## Python Code
-- [.py file line 5:11](matrix_methods/perf.py)
+- [.py file line 15:24](matrix_methods/perf.py)
 
 ## Matrices for comparison
 ![Matrix](media/matrix.png)
